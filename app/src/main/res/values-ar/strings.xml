@@ -7,5 +7,6 @@
     <string name="radio">الراديو</string>
     <string name="islami">اسلامي</string>
     <string name="tasbeh_counter">عدد التسبيحات</string>
-    <string name="tasbeh">tasbeh</string>
+    <string name="tasbeh">تسبيح</string>
+    <string name="Hadiths">الاحاديث</string>
 </resources>

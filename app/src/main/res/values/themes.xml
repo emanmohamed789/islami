@@ -15,4 +15,11 @@
         <item name="itemTextColor">@color/bottom_navigation_view</item>
         <item name="itemIconTint">@color/bottom_navigation_view</item>
     </style>
+
+    <style name="line">
+        <item name="android:background">@color/gold</item>
+    </style>
+
+    <color name="back">@color/black</color>
+
 </resources>

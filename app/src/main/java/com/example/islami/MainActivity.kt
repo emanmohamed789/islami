@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.islami.databinding.ActivityMainBinding
-import com.example.islami.fragments.HadeethFragment
+import com.example.islami.fragments.HadithFragment
 import com.example.islami.fragments.QuranFragment
 import com.example.islami.fragments.RadioFragment
 import com.example.islami.fragments.SebhaFragment
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.hadeeth -> {
-                    pushFragment(HadeethFragment())
+                    pushFragment(HadithFragment())
                 }
 
             }
