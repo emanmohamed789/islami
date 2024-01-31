@@ -33,25 +33,33 @@ class HadithFragment : Fragment() {
 
     private fun readHadithFile() {
         val fileName = "ahadeeth.txt"
-        //
+
+        //read file
         val suraContentAsString = requireContext().assets.open(fileName).bufferedReader().use {
             it.readText()
         }
-        // "   Hello World   ".trim()
+
+        //split each hadith in the text file
         val hadithList = suraContentAsString.trim().split("#")
-        val title = mutableListOf<String>() // []
-        val description = mutableListOf<String>()// []
+        //declare the title list
+        val title = mutableListOf<String>()
+        //declare the hadith content "description"
+        val description = mutableListOf<String>()
+
+        //for each hadith in the list
+        //split the title and the content
         for (hadith in hadithList) {
             val mutableHadithList = hadith.trim().split("\n")
+            //first separation is the title
             title.add(mutableHadithList[0])
-
+            //all the content is the description and the title of the part
             description.add(mutableHadithList.joinToString("\n"))
         }
 
         adapter.hadithItemClickListener = object : HadithAdapter.OnHadithItemClickListener {
             override fun OnHadithClick(hadithItemPosition: Int) {
                 val intent = Intent(requireContext(), HadithDetailsActivity::class.java)
-                val item = description.get(hadithItemPosition) // Whole Hadeth
+                val item = description[hadithItemPosition]
                 intent.putExtra("item", item)
                 startActivity(intent)
             }

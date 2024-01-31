@@ -8,4 +8,6 @@
     <string name="tasbeh_counter">Tasbeh counter</string>
     <string name="tasbeh">tasbeh</string>
     <string name="Hadiths">Hadiths</string>
+    <string name="sura_name">sura name</string>
+    <string name="sura_number">sura number</string>
 </resources>

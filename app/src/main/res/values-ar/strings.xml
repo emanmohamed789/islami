@@ -9,4 +9,6 @@
     <string name="tasbeh_counter">عدد التسبيحات</string>
     <string name="tasbeh">تسبيح</string>
     <string name="Hadiths">الاحاديث</string>
+    <string name="sura_name">اسم السوره</string>
+    <string name="sura_number">رقم السوره</string>
 </resources>
